@@ -25,3 +25,32 @@ const arr = [
     { rank: 'B', age: 20 }
 ]
 */
+
+// const charA = 'A'
+// console.log(charA.charCodeAt())
+
+// const charB = 'B'
+// console.log(charB.charCodeAt())
+
+// console.log('A' < 'B')
+
+console.log(
+    arr.sort((a, b) => {
+        if (a.rank !== b.rank) {
+            return a.rank < b.rank ? -1 : 1
+        }
+        return 0
+    })
+)
+
+function unko(tinko) {
+    console.log(tinko * 2)
+}
+
+unko(8)
+
+const manko = (tinko) => {
+    console.log(tinko ** 2)
+}
+
+manko(10)
