@@ -66,3 +66,19 @@ const in2 = [
         pref_name: null,
     },
 ] */
+
+const aarr = in1.map((user) => {
+    const pref = in2.find((p) => p.pref_id === user.pref)
+    user.pref_name = pref?.pref_name || null
+    return user
+})
+
+// console.log(aarr)
+
+const ore = {
+    age: 23,
+    name: 'kojima',
+}
+
+// console.log(ore.unko?.taste || 10)
+console.log(0 || 10)
