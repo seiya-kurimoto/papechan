@@ -14,6 +14,12 @@ const input2 = {
     問題2: output1からoutput2を作る
 */
 
+/*
+    ヒント
+    Objectのメソッドが必要
+    https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
+*/
+
 // const output1 = [
 //     [
 //         { name: 'シリーズ名', attrId: '01', value: '' },
