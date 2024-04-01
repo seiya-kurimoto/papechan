@@ -20,6 +20,9 @@ const input2 = {
     https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object
 */
 
+/**
+ * 可読性守ったパターン
+ */
 const output1 = Object.keys(input2).map((key2) => {
     const { name } = input2[key2]
     const attrId = key2.match(/\d+/)[0]
@@ -30,6 +33,17 @@ const output1 = Object.keys(input2).map((key2) => {
         value: '',
     }))
 })
+
+/**
+ * やりすぎパターン
+ */
+const output1_2 = Object.keys(input2).map((key2) =>
+    [...Array(Object.keys(input1).length)].map(() => ({
+        name: input2[key2].name,
+        attrId: key2.match(/\d+/)[0],
+        value: '',
+    }))
+)
 
 // console.log(output1)
 
