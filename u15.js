@@ -1,3 +1,7 @@
+/* 
+    nestからFAQの項目だけを取得せよ！
+*/
+
 const nest = [
     {
         header: '商品について',
@@ -66,3 +70,19 @@ const nest = [
         a: 'answer',
     },
 ]
+
+// const output = [
+//     {
+//         q: '1question',
+//         a: 'answer',
+//     },
+//     {
+//         q: '2question',
+//         a: 'answer',
+//     },
+//     {
+//         q: '3question',
+//         a: 'answer',
+//     },
+//     ...
+// ]
